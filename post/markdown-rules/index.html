@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown语法 | SkinCrab</title>
+<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586390044417">
+<link rel="stylesheet" href="https://skina.cn/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162409810-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162409810-1');
+</script>
+
+
+    <meta name="description" content="前言
+Markdown是一种轻量级标记语言，可在博客，论坛等地方使用，较html比起来更易读，易学，易用。
+同html一样，在使用markdown时，所有符号必须使用英文半角字符。同时，markdown理论上兼容html格式。但请注意，请不..." />
+    <meta name="keywords" content="markdown" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://skina.cn">
+        <img src="https://skina.cn/images/avatar.png?v=1586390044417" class="site-logo">
+        <h1 class="site-title">SkinCrab</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://skina.cn/post/Items" class="site-nav">
+            项目
+          </a>
+        
+      
+        
+          <a href="https://skina.cn/post/links" class="site-nav">
+            朋友们
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://www.github.com/skincrab" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      无人能懂我的欢乐
+    </div>
+    <div class="site-footer">
+      Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown语法</h2>
+            <div class="post-date">2020-03-31</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="前言">前言</h3>
+<p>Markdown是一种轻量级标记语言，可在博客，论坛等地方使用，较html比起来更易读，易学，易用。<br>
+同html一样，在使用markdown时，所有符号必须使用英文半角字符。同时，markdown理论上兼容html格式。但请注意，请不要在html标签内使用markdown标签，但可以在markdown标签内使用html。</p>
+<p>在这篇文章中，我们将列举出所有常用的markdown标签，以及其html标签给你参考。</p>
+<h3 id="链接">链接</h3>
+<pre><code>[SkinCrab](http://skina.cn)
+</code></pre>
+<p>效果如下：<br>
+<a href="http://skina.cn">SkinCrab</a></p>
+<p>其html格式如下：</p>
+<pre><code>&lt;a href=&quot;http://skina.cn&quot;&gt;SkinCrab&lt;/a&gt;
+</code></pre>
+<h3 id="水平线分割线">水平线（分割线）</h3>
+<pre><code>---
+</code></pre>
+<p>效果如下：</p>
+<hr>
+<p>其html格式如下：</p>
+<pre><code>&lt;/hr&gt;
+</code></pre>
+<h3 id="标题">标题</h3>
+<p>来个标题大杂烩吗？</p>
+<pre><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<p>其级别越大，字体越小，该章节的标题即为三级标题。<br>
+注意，在'#'之后要加空格</p>
+<p>其html格式如下：</p>
+<pre><code>&lt;h1&gt;一级标题&lt;/h1&gt;
+&lt;h2&gt;二级标题&lt;/h2&gt;
+&lt;h3&gt;三级标题&lt;/h3&gt;
+&lt;h4&gt;四级标题&lt;/h4&gt;
+&lt;h5&gt;五级标题&lt;/h5&gt;
+&lt;h6&gt;六级标题&lt;/h6&gt;
+</code></pre>
+<h3 id="段落">段落</h3>
+<p>段落以空白行分割<br>
+其html格式如下：</p>
+<pre><code>&lt;p&gt;段落以空白行分割&lt;/p&gt;
+</code></pre>
+<h3 id="列表">列表</h3>
+<h4 id="普通列表">普通列表</h4>
+<pre><code>* 张三
+* 李四
+* 王五
+</code></pre>
+<p>效果如下：</p>
+<ul>
+<li>张三</li>
+<li>李四</li>
+<li>王五</li>
+</ul>
+<p>其html格式如下：</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;张三&lt;/li&gt;
+    &lt;li&gt;李四&lt;/li&gt;
+    &lt;li&gt;王五&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h4 id="有序列表">有序列表</h4>
+<pre><code>1. 张三
+2. 李四
+3. 王五
+</code></pre>
+<p>效果如下：</p>
+<ol>
+<li>张三</li>
+<li>李四</li>
+<li>王五</li>
+</ol>
+<p>其html格式如下：</p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;张三&lt;/li&gt;
+    &lt;li&gt;李四&lt;/li&gt;
+    &lt;li&gt;王五&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<h3 id="图片">图片</h3>
+<pre><code>![SkinCrab的小屋](Example.png)
+</code></pre>
+<p>效果如下：<br>
+<img src="https://skina.cn/post-images/1585726992232.jpg" alt="SkinCrab的小屋" title="icon" loading="lazy"></p>
+<p>其html格式如下：</p>
+<pre><code>&lt;p&gt;&lt;img alt=&quot;SkinCrab的小屋&quot; title=&quot;icon&quot; src=&quot;Example.png&quot; /&gt;&lt;/p&gt;
+</code></pre>
+<h3 id="引用">引用</h3>
+<pre><code>&gt;  Markdown使用字符&gt;来引用
+</code></pre>
+<p>效果如下：</p>
+<blockquote>
+<p>Markdown使用字符&quot;&gt;&quot;来引用</p>
+</blockquote>
+<p>其html格式如下：</p>
+<pre><code>&lt;blockquote&gt;
+    &lt;p&gt;Markdown使用字符&quot;&amp;gt;&quot;来引用&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<p>注：</p>
+<pre><code>&amp;gt;
+</code></pre>
+<p>是html中'&lt;'的特殊字符</p>
+<h3 id="断行">断行</h3>
+<pre><code>在行末添加两个空格  产生断行
+</code></pre>
+<p>效果如下：<br>
+在行末添加两个空格  产生断行</p>
+<p>其html格式如下</p>
+<pre><code>&lt;p&gt;在行末添加两个空格&lt;/br&gt;产生断行&lt;/p&gt;
+</code></pre>
+<h3 id="代码块">代码块</h3>
+<pre><code>少量代码请使用`     `包括
+大量代码请使用```   ```包括
+</code></pre>
+<p>效果如上。</p>
+<p>其html格式如下：</p>
+<pre><code>&lt;pre&gt;
+少量代码请使用`     `包括
+大量代码请使用```   ```包括
+&lt;/pre&gt;
+</code></pre>
+<h3 id="文本属性">文本属性</h3>
+<h4 id="斜体字">斜体字</h4>
+<pre><code>_这是斜体字_
+</code></pre>
+<p>效果如下：<br>
+<em>这是斜体字</em></p>
+<p>其html格式如下：</p>
+<pre><code>&lt;em&gt;这是斜体字&lt;/em&gt;
+</code></pre>
+<h4 id="粗体字">粗体字</h4>
+<pre><code>**这是粗体字**
+</code></pre>
+<p>效果如下：<br>
+<strong>这是粗体字</strong></p>
+<p>其html格式如下：</p>
+<pre><code>&lt;strong&gt;这是粗体字&lt;/strong&gt;
+</code></pre>
+<h4 id="删除线">删除线</h4>
+<pre><code>~~这是删除线~~
+</code></pre>
+<p>效果如下：<br>
+<s>这是删除线</s></p>
+<p>其html格式如下：</p>
+<pre><code>&lt;s&gt;这是删除线&lt;/s&gt;
+</code></pre>
+<h3 id="最后">最后</h3>
+<p>还有一些文本属性markdown不支持，请用html进行替代</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://skina.cn/tag/GL6WeFN16/" class="tag">
+                    markdown
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+			<div id="vcomments"></div>
+			<script>
+				new Valine({
+					el: '#vcomments',
+					appId: '6H4OQzIlcbW9l8MgmcqOFixI-gzGzoHsz',
+					appKey: '9x36v2N723mtlEYjT8CaaSjn'
+				})
+			</script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
