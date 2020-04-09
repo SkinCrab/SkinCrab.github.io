@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-09T06:11:46.529Z</updated>
+    <updated>2020-04-09T06:13:40.559Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -45,8 +45,23 @@
     return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
 }
 </code></pre>
-<p>以上为本程序的精华部分，输入输出就不必讲了。<br>
-当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
+<p>以上为本程序的精华部分，输入输出就不必讲了，以下为我的代码。</p>
+<pre><code class="language-c++"># include &lt;iostream&gt;
+# include &lt;cstdio&gt;
+using namespace std;
+long long b,p,k;
+long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    int t=cal( b , p/2 , k )%k;
+    return ( t * t *( p%2==0 ? 1 : b%k ))%k;
+}
+int main() {
+    cin&gt;&gt;b&gt;&gt;p&gt;&gt;k;
+    printf(&quot;%d^%d mod %d=%d&quot;,b,p,k,cal( b , p , k ));
+    return 0;
+}
+</code></pre>
+<p>当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
 <p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
 转载请务必注明链接。</p>
 ]]></content>

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412676198">
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412818220">
 <link rel="stylesheet" href="https://skina.cn/styles/main.css">
 
 
@@ -40,7 +40,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://skina.cn">
-        <img src="https://skina.cn/images/avatar.png?v=1586412676198" class="site-logo">
+        <img src="https://skina.cn/images/avatar.png?v=1586412818220" class="site-logo">
         <h1 class="site-title">SkinCrab</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -151,8 +151,23 @@
     return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
 }
 </code></pre>
-<p>以上为本程序的精华部分，输入输出就不必讲了。<br>
-当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
+<p>以上为本程序的精华部分，输入输出就不必讲了，以下为我的代码。</p>
+<pre><code class="language-c++"># include &lt;iostream&gt;
+# include &lt;cstdio&gt;
+using namespace std;
+long long b,p,k;
+long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    int t=cal( b , p/2 , k )%k;
+    return ( t * t *( p%2==0 ? 1 : b%k ))%k;
+}
+int main() {
+    cin&gt;&gt;b&gt;&gt;p&gt;&gt;k;
+    printf(&quot;%d^%d mod %d=%d&quot;,b,p,k,cal( b , p , k ));
+    return 0;
+}
+</code></pre>
+<p>当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
 <p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
 转载请务必注明链接。</p>
 
