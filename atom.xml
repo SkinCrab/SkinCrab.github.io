@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-08T23:54:34.987Z</updated>
+    <updated>2020-04-09T06:05:26.837Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -10,6 +10,47 @@
     <logo>https://skina.cn/images/avatar.png</logo>
     <icon>https://skina.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, SkinCrab</rights>
+    <entry>
+        <title type="html"><![CDATA[【洛谷P1226】【模板】快速幂||取余运算 题解]]></title>
+        <id>https://skina.cn/post/Fast-Power-Problem-Solution/</id>
+        <link href="https://skina.cn/post/Fast-Power-Problem-Solution/">
+        </link>
+        <updated>2020-04-09T05:54:43.000Z</updated>
+        <content type="html"><![CDATA[<p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+<p>也就是说可以将p拆解，举个栗子3^90%17</p>
+<pre><code>3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
+而3^45 % 17则又可以拆分为((3^22 % 17)*(3^22 % 17)*(3 % 17)) % 17
+后3^22 % 17则拆分为((3^11 % 17)*(3^11 %17)) % 17
+</code></pre>
+<p>以此类推可得</p>
+<pre><code>3^11 % 17 = ((3^5 % 17)*(3^5 %17)*(3 %17)) % 17
+3^5 % 17 = ((3^2 % 17)*(3^2 % 17)*(3 % 17)) % 17
+3^2 % 17= ((3 % 17)*(3 % 17)) % 17
+</code></pre>
+<p>因此可得如下p的变化<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/n8ykl76m.png" alt="我的洛谷题解图片1" loading="lazy"></p>
+<p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
+<pre><code>long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    return ( cal( b , p/2 , k )%k * cal( b , p/2 , k )%k )%k;
+}
+</code></pre>
+<p>但是以上代码只能处理p为偶数的情况<br>
+因此需在return处添加<code>( p%2==0 ? 1 : b%k )</code><br>
+即当p为偶数时返回1，否则返回b%k</p>
+<p>可是cal函数被调用了两次，是否可以进行优化呢？</p>
+<pre><code>long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    int t=cal( b , p/2 , k )%k;
+    return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
+}
+</code></pre>
+<p>以上为本程序的精华部分，输入输出就不必讲了。<br>
+当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
+<p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
+转载请务必注明链接。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[腾讯官方机器人“HOO!K”]]></title>
         <id>https://skina.cn/post/tencent-bot/</id>

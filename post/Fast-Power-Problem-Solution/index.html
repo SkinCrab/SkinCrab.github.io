@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>腾讯 | SkinCrab</title>
+<title>【洛谷P1226】【模板】快速幂||取余运算 题解 | SkinCrab</title>
 <script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -27,7 +27,11 @@
 </script>
 
 
-    <meta name="description" content="无人能懂我的欢乐">
+    <meta name="description" content="拿到题目，看了下内容，发现这道题可以运用到二分算法。
+也就是说可以将p拆解，举个栗子3^90%17
+3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
+而3^45 % 17则又可以拆分为((3^22 ..." />
+    <meta name="keywords" content="题解,洛谷" />
   </head>
   <body>
     <div id="app" class="main">
@@ -113,48 +117,85 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 腾讯</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://skina.cn/post/tencent-bot/">
-                  <h2 class="post-title">腾讯官方机器人“HOO!K”</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-06
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://skina.cn/post/tim&amp;wechat/">
-                  <h2 class="post-title">TIM登微信？还是用微信登录的QQ小号？</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-02
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">【洛谷P1226】【模板】快速幂||取余运算 题解</h2>
+            <div class="post-date">2020-04-09</div>
+            
+            <div class="post-content" v-pre>
+              <p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+<p>也就是说可以将p拆解，举个栗子3^90%17</p>
+<pre><code>3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
+而3^45 % 17则又可以拆分为((3^22 % 17)*(3^22 % 17)*(3 % 17)) % 17
+后3^22 % 17则拆分为((3^11 % 17)*(3^11 %17)) % 17
+</code></pre>
+<p>以此类推可得</p>
+<pre><code>3^11 % 17 = ((3^5 % 17)*(3^5 %17)*(3 %17)) % 17
+3^5 % 17 = ((3^2 % 17)*(3^2 % 17)*(3 % 17)) % 17
+3^2 % 17= ((3 % 17)*(3 % 17)) % 17
+</code></pre>
+<p>因此可得如下p的变化<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/n8ykl76m.png" alt="我的洛谷题解图片1" loading="lazy"></p>
+<p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
+<pre><code>long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    return ( cal( b , p/2 , k )%k * cal( b , p/2 , k )%k )%k;
+}
+</code></pre>
+<p>但是以上代码只能处理p为偶数的情况<br>
+因此需在return处添加<code>( p%2==0 ? 1 : b%k )</code><br>
+即当p为偶数时返回1，否则返回b%k</p>
+<p>可是cal函数被调用了两次，是否可以进行优化呢？</p>
+<pre><code>long long cal(long long b,long long p,long long k) {
+    if(p==1) return b%k;
+    int t=cal( b , p/2 , k )%k;
+    return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
+}
+</code></pre>
+<p>以上为本程序的精华部分，输入输出就不必讲了。<br>
+当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
+<p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
+转载请务必注明链接。</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://skina.cn/tag/prFRuuXDN/" class="tag">
+                    题解
+                  </a>
+                
+                  <a href="https://skina.cn/tag/PRKIWGzFzP/" class="tag">
+                    洛谷
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://skina.cn/post/tencent-bot/">
+                  <h3 class="post-title">
+                    腾讯官方机器人“HOO!K”
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+			<div id="vcomments"></div>
+			<script>
+				new Valine({
+					el: '#vcomments',
+					appId: '6H4OQzIlcbW9l8MgmcqOFixI-gzGzoHsz',
+					appKey: '9x36v2N723mtlEYjT8CaaSjn'
+				})
+			</script>
+          </div>
 
         </div>
       </div>
     </div>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
