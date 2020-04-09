@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412616294">
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412676198">
 <link rel="stylesheet" href="https://skina.cn/styles/main.css">
 
 
@@ -40,7 +40,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://skina.cn">
-        <img src="https://skina.cn/images/avatar.png?v=1586412616294" class="site-logo">
+        <img src="https://skina.cn/images/avatar.png?v=1586412676198" class="site-logo">
         <h1 class="site-title">SkinCrab</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -136,7 +136,7 @@
 <p>因此可得如下p的变化<br>
 <img src="https://skina.cn/post-images/1586412605583.png" alt="p的变化" loading="lazy"></p>
 <p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
-<pre><code>long long cal(long long b,long long p,long long k) {
+<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
     if(p==1) return b%k;
     return ( cal( b , p/2 , k )%k * cal( b , p/2 , k )%k )%k;
 }
@@ -145,7 +145,7 @@
 因此需在return处添加<code>( p%2==0 ? 1 : b%k )</code><br>
 即当p为偶数时返回1，否则返回b%k</p>
 <p>可是cal函数被调用了两次，是否可以进行优化呢？</p>
-<pre><code>long long cal(long long b,long long p,long long k) {
+<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
     if(p==1) return b%k;
     int t=cal( b , p/2 , k )%k;
     return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
