@@ -1,210 +1,218 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>文章归档 | SkinCrab</title>
-<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412818220">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    SkinCrab
+</title>
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586690688083">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://skina.cn/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://skina.cn/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- I added -->
+
+<!--Google Ads-->
+<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--End-->
+
+<!--看板娘-->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+<!--End-->
 
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162409810-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-162409810-1');
-</script>
+<!-- End -->
 
 
-    <meta name="description" content="无人能懂我的欢乐">
-  </head>
-  <body>
-    <div id="app" class="main">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162409810-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://skina.cn">
-        <img src="https://skina.cn/images/avatar.png?v=1586412818220" class="site-logo">
-        <h1 class="site-title">SkinCrab</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="https://skina.cn/post/Items" class="site-nav">
-            项目
-          </a>
-        
-      
-        
-          <a href="https://skina.cn/post/links" class="site-nav">
-            朋友们
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-          <a class="social-link" href="https://www.github.com/skincrab" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      无人能懂我的欢乐
-    </div>
-    <div class="site-footer">
-      Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-162409810-1');
+    </script>
+    
+</head>
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
-              
-                
-                  <article class="post">
-                    <a href="https://skina.cn/post/Fast-Power-Problem-Solution/">
-                      <h2 class="post-title">
-                        【洛谷P1226】【模板】快速幂||取余运算 题解
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://skina.cn/post/tencent-bot/">
-                      <h2 class="post-title">
-                        腾讯官方机器人“HOO!K”
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://skina.cn/post/Build-Flask-environment/">
-                      <h2 class="post-title">
-                        搭建Flask环境
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://skina.cn/post/tim&amp;wechat/">
-                      <h2 class="post-title">
-                        TIM登微信？还是用微信登录的QQ小号？
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://skina.cn/post/markdown-rules/">
-                      <h2 class="post-title">
-                        Markdown语法
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
-
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://skina.cn">
+                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1586690688083" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    SkinCrab
+                </h1>
+            </div>
         </div>
-      </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/Items" class="menu">
+                                    项目
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/links" class="menu">
+                                    朋友们
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-AOS.init();
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+        });
+    });
 </script>
 
+            
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
+    <div class="archives-container main-container">
+        <ul class="timeline">
+            
+                <li>
+                    <h3 class="year">
+                        2020
+                    </h3>
+                    <ul class="year-wrapper">
+                        
+                            
+                                <li>
+                                    <span class="date">2020-04-09</span>
+                                    <a class="title" href="https://skina.cn/post/Fast-Power-Problem-Solution/">
+                                        <span>【洛谷P1226】【模板】快速幂||取余运算 题解</span>
+                                    </a>
+                                </li>
+                                
+                                    
+                            
+                                <li>
+                                    <span class="date">2020-04-06</span>
+                                    <a class="title" href="https://skina.cn/post/tencent-bot/">
+                                        <span>腾讯官方机器人“HOO!K”</span>
+                                    </a>
+                                </li>
+                                
+                                    
+                            
+                                <li>
+                                    <span class="date">2020-04-06</span>
+                                    <a class="title" href="https://skina.cn/post/Build-Flask-environment/">
+                                        <span>搭建Flask环境</span>
+                                    </a>
+                                </li>
+                                
+                                    
+                            
+                                <li>
+                                    <span class="date">2020-04-02</span>
+                                    <a class="title" href="https://skina.cn/post/tim&amp;wechat/">
+                                        <span>TIM登微信？还是用微信登录的QQ小号？</span>
+                                    </a>
+                                </li>
+                                
+                                    
+                            
+                                <li>
+                                    <span class="date">2020-03-31</span>
+                                    <a class="title" href="https://skina.cn/post/markdown-rules/">
+                                        <span>Markdown语法</span>
+                                    </a>
+                                </li>
+                                
+                                    
+                    </ul>
 
+                </li>
+                
+        </ul>
+    </div>
 
+                
 
+                    <div class="site-footer">
+  Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | 
+  <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
+</div>
 
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-  </body>
+    </div>
+</body>
+
 </html>

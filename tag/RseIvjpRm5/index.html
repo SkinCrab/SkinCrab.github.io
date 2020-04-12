@@ -1,183 +1,294 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>QQ | SkinCrab</title>
-<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586412818220">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    QQ | SkinCrab
+</title>
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586690688083">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://skina.cn/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://skina.cn/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- I added -->
+
+<!--Google Ads-->
+<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--End-->
+
+<!--看板娘-->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+<!--End-->
 
 
+<!-- End -->
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162409810-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162409810-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162409810-1');
+    </script>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://skina.cn">
+                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1586690688083" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    SkinCrab
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/Items" class="menu">
+                                    项目
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/links" class="menu">
+                                    朋友们
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-  gtag('config', 'UA-162409810-1');
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
 </script>
 
-
-    <meta name="description" content="无人能懂我的欢乐">
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://skina.cn">
-        <img src="https://skina.cn/images/avatar.png?v=1586412818220" class="site-logo">
-        <h1 class="site-title">SkinCrab</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        QQ</b>
     </div>
-    <div>
-      
+    
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="https://skina.cn/post/Items" class="site-nav">
-            项目
-          </a>
-        
-      
-        
-          <a href="https://skina.cn/post/links" class="site-nav">
-            朋友们
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-          <a class="social-link" href="https://www.github.com/skincrab" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      无人能懂我的欢乐
-    </div>
-    <div class="site-footer">
-      Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: QQ</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://skina.cn/post/tencent-bot/">
-                  <h2 class="post-title">腾讯官方机器人“HOO!K”</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-06
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://skina.cn/post/tencent-bot/">
+                        腾讯官方机器人“HOO!K”
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-04-06</time>
+                    
+                        <a href="https://skina.cn/tag/7CSp7Y-Mr/" class="post-tag i-tag
+                            i-tag-other_2">
+            #bot
+        </a>
+                        
+                        <a href="https://skina.cn/tag/RseIvjpRm5/" class="post-tag i-tag
+                            i-tag-other_2">
+            #QQ
+        </a>
+                        
+                        <a href="https://skina.cn/tag/0nZ0wMtUji/" class="post-tag i-tag
+                            i-tag-info">
+            #腾讯
+        </a>
+                        
                 </div>
-                <div class="post-abstract">
-                  
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <h3 id="前言">前言</h3>
+<p>N年之前，我接触了酷Q，开始用酷Q搭建QQ机器人，但是总是逃不过被腾讯制裁的我就幻想着腾讯也出个官方机器人，支持我们自定义插件，自定义功能，像Telegram那样。</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://skina.cn/post/tencent-bot/">Read More ~</a>
+                            </div>
                 </div>
-              </div>
-              
             </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://skina.cn/post/tim&amp;wechat/">
-                  <h2 class="post-title">TIM登微信？还是用微信登录的QQ小号？</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-02
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://skina.cn/post/tim&amp;wechat/">
+                        TIM登微信？还是用微信登录的QQ小号？
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-04-02</time>
+                    
+                        <a href="https://skina.cn/tag/muq16Kmv1/" class="post-tag i-tag
+                            i-tag-other_4">
+            #TIM
+        </a>
+                        
+                        <a href="https://skina.cn/tag/RseIvjpRm5/" class="post-tag i-tag
+                            i-tag-warning">
+            #QQ
+        </a>
+                        
+                        <a href="https://skina.cn/tag/0nZ0wMtUji/" class="post-tag i-tag
+                            i-tag-warning">
+            #腾讯
+        </a>
+                        
                 </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1585817607343.png" alt="" loading="lazy"></figure>
+<h2 id="前言">前言</h2>
+<p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本。</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://skina.cn/post/tim&amp;wechat/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://skina.cn/images/avatar.png?v=1586690688083)">
+        </div>
+        <h1 class="id_card-title">
+            SkinCrab
+        </h1>
+        <h2 class="id_card-description">
+            无人能懂我的欢乐
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/skincrab" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
         </div>
-      </div>
     </div>
+    
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+                        <!-- 公告栏 -->
+                        
 
-AOS.init();
+                </div>
+            </div>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
+
+            <div class="site-footer">
+  Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | 
+  <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
-  </body>
 </html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-09T06:13:40.559Z</updated>
+    <updated>2020-04-12T11:38:34.568Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -16,7 +16,10 @@
         <link href="https://skina.cn/post/Fast-Power-Problem-Solution/">
         </link>
         <updated>2020-04-09T05:54:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+<!-- more -->
 <p>也就是说可以将p拆解，举个栗子3^90%17</p>
 <pre><code>3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
 而3^45 % 17则又可以拆分为((3^22 % 17)*(3^22 % 17)*(3 % 17)) % 17
@@ -72,9 +75,13 @@ int main() {
         <link href="https://skina.cn/post/tencent-bot/">
         </link>
         <updated>2020-04-06T04:27:40.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="前言">前言</h3>
+<p>N年之前，我接触了酷Q，开始用酷Q搭建QQ机器人，但是总是逃不过被腾讯制裁的我就幻想着腾讯也出个官方机器人，支持我们自定义插件，自定义功能，像Telegram那样。</p>
+]]></summary>
         <content type="html"><![CDATA[<h3 id="前言">前言</h3>
-<p>N年之前，我接触了酷Q，开始用酷Q搭建QQ机器人，但是总是逃不过被腾讯制裁的我就幻想着腾讯也出个官方机器人，支持我们自定义插件，自定义功能，像Telegram那样。<br>
-现在，它来了！！！</p>
+<p>N年之前，我接触了酷Q，开始用酷Q搭建QQ机器人，但是总是逃不过被腾讯制裁的我就幻想着腾讯也出个官方机器人，支持我们自定义插件，自定义功能，像Telegram那样。</p>
+<!-- more -->
+<p>现在，它来了！！！</p>
 <p>先别激动，跟着我一步步来</p>
 <h3 id="开始">开始</h3>
 <p>首先，先加上机器人的好友<code>2854196399</code><br>
@@ -102,8 +109,12 @@ int main() {
         <link href="https://skina.cn/post/Build-Flask-environment/">
         </link>
         <updated>2020-04-06T02:42:22.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="前言">前言</h2>
+<p>在搭建falsk环境之前，你的系统上必须装有python环境。</p>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="前言">前言</h2>
 <p>在搭建falsk环境之前，你的系统上必须装有python环境。</p>
+<!-- more -->
 <h2 id="开始安装">开始安装</h2>
 <p>如果你使用windows系统，建议Win+R输入powershell，使用powershell进行以下操作。</p>
 <h3 id="安装virtualenv">安装virtualenv</h3>
@@ -146,9 +157,15 @@ windows环境请使用<code>venv\\scripts\\activate</code>命令</p>
         <link href="https://skina.cn/post/tim&amp;wechat/">
         </link>
         <updated>2020-04-02T08:00:29.000Z</updated>
+        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1585817607343.png" alt="" loading="lazy"></figure>
+<h2 id="前言">前言</h2>
+<p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本。</p>
+]]></summary>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1585817607343.png" alt="" loading="lazy"></figure>
 <h2 id="前言">前言</h2>
-<p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本，我在某群群友的推荐下，也去更新了新版的QQ。</p>
+<p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本。</p>
+<!-- more -->
+<p>我在某群群友的推荐下，也去更新了新版的QQ。</p>
 <h2 id="更新">更新</h2>
 <p>然鹅，当我点下菜单栏的升级键，给爷弹出了这个：<br>
 <img src="https://skina.cn/post-images/1585816041835.png" alt="TIMUpdate" loading="lazy"><br>
@@ -181,9 +198,13 @@ wdnmd，你这不是在逗我。</p>
         <link href="https://skina.cn/post/markdown-rules/">
         </link>
         <updated>2020-03-31T14:23:02.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="前言">前言</h3>
+<p>Markdown是一种轻量级标记语言，可在博客，论坛等地方使用，较html比起来更易读，易学，易用。</p>
+]]></summary>
         <content type="html"><![CDATA[<h3 id="前言">前言</h3>
-<p>Markdown是一种轻量级标记语言，可在博客，论坛等地方使用，较html比起来更易读，易学，易用。<br>
-同html一样，在使用markdown时，所有符号必须使用英文半角字符。同时，markdown理论上兼容html格式。但请注意，请不要在html标签内使用markdown标签，但可以在markdown标签内使用html。</p>
+<p>Markdown是一种轻量级标记语言，可在博客，论坛等地方使用，较html比起来更易读，易学，易用。</p>
+<!-- more -->
+<p>同html一样，在使用markdown时，所有符号必须使用英文半角字符。同时，markdown理论上兼容html格式。但请注意，请不要在html标签内使用markdown标签，但可以在markdown标签内使用html。</p>
 <p>在这篇文章中，我们将列举出所有常用的markdown标签，以及其html标签给你参考。</p>
 <h3 id="链接">链接</h3>
 <pre><code>[SkinCrab](http://skina.cn)
