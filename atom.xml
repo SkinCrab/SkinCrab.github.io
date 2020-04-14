@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-13T15:03:11.154Z</updated>
+    <updated>2020-04-14T12:46:25.249Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://skina.cn/images/avatar.png</logo>
     <icon>https://skina.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, SkinCrab</rights>
+    <entry>
+        <title type="html"><![CDATA[【Java】编译错误: 需要class, interface或enum]]></title>
+        <id>https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/</id>
+        <link href="https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/">
+        </link>
+        <updated>2020-04-14T11:50:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天捡起那本被我丢弃已久的Java入门书，想要继续我的Java学习之旅。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天捡起那本被我丢弃已久的Java入门书，想要继续我的Java学习之旅。</p>
+<!-- more -->
+<p>上手写了一个helloworld，然后......</p>
+<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1586867346170.png" alt="报错" loading="lazy"></figure>
+<p>彩笔编译器！我不学了<br>
+（摔书.jpg</p>
+<p>好吧（小朋友，你的思想很危险.png<br>
+不要抱着这个念头，其实编译器比你聪明多了。</p>
+<p>我们来分析下这个错误（强行分析<br>
+<img src="https://skina.cn/post-images/1586868111226.png" alt="报错分析" loading="lazy"><br>
+看到了前面的两个乱码了没有？很自然联想到时编码错误，于是百度骚操作了一波，明白了不能使用UTF-8-BOM<br>
+<img src="https://skina.cn/post-images/1586868302480.png" alt="" loading="lazy"><br>
+于是切换回UTF-8问题就解决了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【洛谷P1226】【模板】快速幂||取余运算 题解]]></title>
         <id>https://skina.cn/post/Fast-Power-Problem-Solution/</id>
@@ -474,7 +497,8 @@ Gitee: <a href="https://gitee.com/SkinCrab">SkinCrab</a></p>
 <p><a href="https://www.parksi.xyz/">Parksi</a><br>
 <a href="https://tony1026.github.io/">Tony1026</a><br>
 <a href="https://saky.site/">さくら荘後の花園</a><br>
-<a href="https://blog.Crj0b.com/">Crj0b's Blog</a></p>
+<a href="https://blog.Crj0b.com/">Crj0b's Blog</a><br>
+<a href="https://www.youdream.top/">优梦博客</a></p>
 ]]></content>
     </entry>
 </feed>
