@@ -892,7 +892,10 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
-#gitalk-container,
+.next-right {
+  text-align: right;
+}
+.right #gitalk-container,
 #disqus_thread {
   padding: 0 30px;
 }
