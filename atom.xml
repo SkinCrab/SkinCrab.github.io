@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-15T04:25:08.452Z</updated>
+    <updated>2020-04-15T10:29:22.037Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -498,7 +498,8 @@ Gitee: <a href="https://gitee.com/SkinCrab">SkinCrab</a></p>
 <a href="https://tony1026.github.io/">Tony1026</a><br>
 <a href="https://saky.site/">さくら荘後の花園</a><br>
 <a href="https://blog.Crj0b.com/">Crj0b's Blog</a><br>
-<a href="https://www.youdream.top/">优梦博客</a></p>
+<a href="https://www.youdream.top/">优梦博客</a><br>
+<a href="https://oi-master.github.io/">TianyuZhou 小蒟蒻的博客</a></p>
 ]]></content>
     </entry>
 </feed>
