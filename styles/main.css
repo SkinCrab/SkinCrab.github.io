@@ -892,18 +892,6 @@ body {
   font-weight: bold;
   font-size: 15px;
 }
-.next-right {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  text-align: right;
-}
-.next-left {
-  display: inline-block;
-  position: absolute;
-  left: 0px;
-  text-align: left;
-}
 #gitalk-container,
 #disqus_thread {
   padding: 0 30px;
