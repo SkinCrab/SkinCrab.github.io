@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-14T12:46:57.125Z</updated>
+    <updated>2020-04-15T04:08:14.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -408,80 +408,6 @@ wdnmd，你这不是在逗我。</p>
 <ul>
 <li>复刻“無文字”主题</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://skina.cn/post/about/</id>
-        <link href="https://skina.cn/post/about/">
-        </link>
-        <updated>2009-12-31T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<!-- more -->
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>欢迎来到皮皮蟹的小屋！<br>
-你可以在这里看到我的学习笔记，以及各种简单的教程。</p>
-<p>本站还很年轻，它创建于2020年3月25日呢！</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>博主目前是一名 <strong>在读初中生</strong></p>
-<p>破壳日为2005年9月</p>
-<p>这是我的项目开源地址：<br>
-Github: <a href="https://github.com/SkinCrab">https://github.com/SkinCrab</a><br>
-Gitee: <a href="https://gitee.com/SkinCrab">https://gitee.com/SkinCrab</a></p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>平日喜爱码码代码，看看书。</p>
-<h2 id="编程语言">💻 编程语言</h2>
-<h3 id="c家族">C家族</h3>
-<ul>
-<li>C<br>
-<code>printf(&quot;Hello World!&quot;);</code></li>
-<li>C++<br>
-<code>cout&lt;&lt;&quot;Hello World!&quot;;</code></li>
-<li>C# （近日刚学）<br>
-<code>Console.WriteLine(&quot;Hello,World&quot;);</code></li>
-</ul>
-<h3 id="其他语言">其他语言</h3>
-<ul>
-<li>Python<br>
-<code>print(&quot;Hello World!&quot;)</code></li>
-</ul>
-<p>没了……</p>
-<h2 id="️-正在开发">⌨️ 正在开发</h2>
-<p>在这里码一下，以免我弃坑</p>
-<h3 id="基于nonebot的插件">基于nonebot的插件</h3>
-<ul>
-<li>⏰ 闹钟插件（咕咕中）</li>
-</ul>
-<h3 id="coolq插件">CoolQ插件</h3>
-<ul>
-<li>📖 古诗文背默</li>
-<li>🎮 游戏大全</li>
-<li>☀️ 签到插件</li>
-</ul>
-<h3 id="其他">其他</h3>
-<ul>
-<li>🌈 计划写一个Gridea主题</li>
-</ul>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>在大多数平台上，我用的是skincrab这个网名。<br>
-且QQ，wechat，telephone等只提供给熟人。<br>
-那么怎么联系我呢？这里提供以下联系方式</p>
-<h3 id="邮箱">📧 邮箱</h3>
-<p>Gmail:<a href="mailto:skincrab930@gmail.com">skincrab930@gmail.com</a><br>
-163Mail:<a href="mailto:skincrab@163.com">skincrab@163.com</a><br>
-DomainMail:<a href="mailto:admin@skina.cn">admin@skina.cn</a></p>
-<h3 id="社交网站">🌐 社交网站</h3>
-<p>Zhihu.com:<a href="https://www.zhihu.com/people/skincrab">SkinCrab</a><br>
-Telegram:SkinCrab<br>
-Twitter:SkinCrab<br>
-Github:<a href="https://github.com/SkinCrab">SkinCrab</a><br>
-Gitee: <a href="https://gitee.com/SkinCrab">SkinCrab</a></p>
 ]]></content>
     </entry>
     <entry>
