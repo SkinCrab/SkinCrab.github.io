@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-15T10:29:22.037Z</updated>
+    <updated>2020-04-15T10:41:33.008Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -482,24 +482,6 @@ Telegram:SkinCrab<br>
 Twitter:SkinCrab<br>
 Github:<a href="https://github.com/SkinCrab">SkinCrab</a><br>
 Gitee: <a href="https://gitee.com/SkinCrab">SkinCrab</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的朋友们]]></title>
-        <id>https://skina.cn/post/links/</id>
-        <link href="https://skina.cn/post/links/">
-        </link>
-        <updated>2009-12-31T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>闲着没事就去我朋友们的博客转一转吧！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>闲着没事就去我朋友们的博客转一转吧！</p>
-<!-- more -->
-<p><a href="https://www.parksi.xyz/">Parksi</a><br>
-<a href="https://tony1026.github.io/">Tony1026</a><br>
-<a href="https://saky.site/">さくら荘後の花園</a><br>
-<a href="https://blog.Crj0b.com/">Crj0b's Blog</a><br>
-<a href="https://www.youdream.top/">优梦博客</a><br>
-<a href="https://oi-master.github.io/">TianyuZhou 小蒟蒻的博客</a></p>
 ]]></content>
     </entry>
 </feed>

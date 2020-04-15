@@ -5,9 +5,9 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    【洛谷P1226】【模板】快速幂||取余运算 题解 | SkinCrab
+    我的朋友们 | SkinCrab
 </title>
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586947271489">
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1586946553240">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -63,7 +63,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://skina.cn">
-                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1586947271489" alt="">
+                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1586946553240" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -117,7 +117,7 @@
                                 
                     
                             <li>
-                                <a href="https://skina.cn/links" class="menu">
+                                <a href="https://skina.cn/post/links" class="menu">
                                     朋友们
                                 </a>
                             </li>
@@ -150,93 +150,35 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            【洛谷P1226】【模板】快速幂||取余运算 题解
+                            我的朋友们
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2020-04-09</time>
+                            <time class="post-time">2010-01-01</time>
                             
-                                <a href="https://skina.cn/tag/p361fq_09/" class="post-tag i-tag
-                            i-tag-">
-                            #算法
-                        </a>
-                                
-                                <a href="https://skina.cn/tag/prFRuuXDN/" class="post-tag i-tag
-                            i-tag-">
-                            #题解
-                        </a>
-                                
-                                <a href="https://skina.cn/tag/PRKIWGzFzP/" class="post-tag i-tag
-                            i-tag-banana">
-                            #洛谷
-                        </a>
-                                
                         </div>
                         
                                 <div class="post-content">
-                                    <p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+                                    <p>闲着没事就去我朋友们的博客转一转吧！</p>
 <!-- more -->
-<p>也就是说可以将p拆解，举个栗子3^90%17</p>
-<pre><code>3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
-而3^45 % 17则又可以拆分为((3^22 % 17)*(3^22 % 17)*(3 % 17)) % 17
-后3^22 % 17则拆分为((3^11 % 17)*(3^11 %17)) % 17
-</code></pre>
-<p>以此类推可得</p>
-<pre><code>3^11 % 17 = ((3^5 % 17)*(3^5 %17)*(3 %17)) % 17
-3^5 % 17 = ((3^2 % 17)*(3^2 % 17)*(3 % 17)) % 17
-3^2 % 17= ((3 % 17)*(3 % 17)) % 17
-</code></pre>
-<p>因此可得如下p的变化<br>
-<img src="https://skina.cn/post-images/1586412605583.png" alt="p的变化" loading="lazy"></p>
-<p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
-<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    return ( cal( b , p/2 , k )%k * cal( b , p/2 , k )%k )%k;
-}
-</code></pre>
-<p>但是以上代码只能处理p为偶数的情况<br>
-因此需在return处添加<code>( p%2==0 ? 1 : b%k )</code><br>
-即当p为偶数时返回1，否则返回b%k</p>
-<p>可是cal函数被调用了两次，是否可以进行优化呢？</p>
-<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    int t=cal( b , p/2 , k )%k;
-    return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
-}
-</code></pre>
-<p>以上为本程序的精华部分，输入输出就不必讲了，以下为我的代码。</p>
-<pre><code class="language-c++"># include &lt;iostream&gt;
-# include &lt;cstdio&gt;
-using namespace std;
-long long b,p,k;
-long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    int t=cal( b , p/2 , k )%k;
-    return ( t * t *( p%2==0 ? 1 : b%k ))%k;
-}
-int main() {
-    cin&gt;&gt;b&gt;&gt;p&gt;&gt;k;
-    printf(&quot;%d^%d mod %d=%d&quot;,b,p,k,cal( b , p , k ));
-    return 0;
-}
-</code></pre>
-<p>当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
-<p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
-转载请务必注明链接。</p>
+<p><a href="https://www.parksi.xyz/">Parksi</a><br>
+<a href="https://tony1026.github.io/">Tony1026</a><br>
+<a href="https://saky.site/">さくら荘後の花園</a><br>
+<a href="https://blog.Crj0b.com/">Crj0b's Blog</a><br>
+<a href="https://www.youdream.top/">优梦博客</a><br>
+<a href="https://oi-master.github.io/">TianyuZhou 小蒟蒻的博客</a></p>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                    
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://skina.cn/post/tencent-bot/">
                                 <h3 class="post-title">
-                                    腾讯官方机器人“HOO!K”
+                                    没有了
                                 </h3>
-                            </a>
 							
                         
-                    
 						<!--Valine-->
 						<div id="vcomments"></div>
 						
@@ -264,7 +206,7 @@ int main() {
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://skina.cn/images/avatar.png?v=1586947271489)">
+        <div class="id_card-avatar" style="background-image: url(https://skina.cn/images/avatar.png?v=1586946553240)">
         </div>
         <h1 class="id_card-title">
             SkinCrab
