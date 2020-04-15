@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-15T11:49:22.504Z</updated>
+    <updated>2020-04-15T11:52:26.097Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -376,38 +376,6 @@ wdnmd，你这不是在逗我。</p>
 </code></pre>
 <h3 id="最后">最后</h3>
 <p>还有一些文本属性markdown不支持，请用html进行替代</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[项目]]></title>
-        <id>https://skina.cn/post/Items/</id>
-        <link href="https://skina.cn/post/Items/">
-        </link>
-        <updated>2009-12-31T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="历史项目">历史项目</h1>
-]]></summary>
-        <content type="html"><![CDATA[<h1 id="历史项目">历史项目</h1>
-<!-- more -->
-<h2 id="python">Python</h2>
-<h3 id="nonebot">Nonebot</h3>
-<ul>
-<li>☁️ 天气插件<br>
-项目地址：<a href="https://github.com/SkinCrab/nonebot-Weather">https://github.com/SkinCrab/nonebot-Weather</a></li>
-<li>🔢 入群验证<br>
-项目地址：<a href="https://github.com/SkinCrab/Join-group-verification">https://github.com/SkinCrab/Join-group-verification</a></li>
-</ul>
-<h2 id="c">C++</h2>
-<h3 id="coolq">CoolQ</h3>
-<ul>
-<li>🎲 随机抽签<br>
-项目地址：<a href="https://github.com/SkinCrab/RandomDraw">https://github.com/SkinCrab/RandomDraw</a></li>
-</ul>
-<h1 id="coding">Coding</h1>
-<h2 id="ejs">ejs</h2>
-<h3 id="gridea">Gridea</h3>
-<ul>
-<li>复刻“無文字”主题</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
