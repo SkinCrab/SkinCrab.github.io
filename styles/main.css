@@ -890,10 +890,15 @@ body {
 }
 .next-post .post-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .next-right {
+  display: inline-block;
   text-align: right;
+}
+.next-left {
+  display: inline-block;
+  text-align: left;
 }
 .right #gitalk-container,
 #disqus_thread {

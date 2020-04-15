@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4001</id>
+    <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-15T12:17:28.299Z</updated>
+    <updated>2020-04-15T12:54:35.139Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4001"/>
-    <link rel="self" href="http://localhost:4001/atom.xml"/>
+    <link rel="alternate" href="https://skina.cn"/>
+    <link rel="self" href="https://skina.cn/atom.xml"/>
     <subtitle>我心似旷野之鸟，在你眼里找到天空。</subtitle>
-    <logo>http://localhost:4001/images/avatar.png</logo>
-    <icon>http://localhost:4001/favicon.ico</icon>
+    <logo>https://skina.cn/images/avatar.png</logo>
+    <icon>https://skina.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, SkinCrab</rights>
     <entry>
         <title type="html"><![CDATA[【Java】编译错误: 需要class, interface或enum]]></title>
-        <id>http://localhost:4001/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/</id>
-        <link href="http://localhost:4001/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/">
+        <id>https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/</id>
+        <link href="https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/">
         </link>
         <updated>2020-04-14T11:50:42.000Z</updated>
         <summary type="html"><![CDATA[<p>今天捡起那本被我丢弃已久的Java入门书，想要继续我的Java学习之旅。</p>
@@ -21,22 +21,22 @@
         <content type="html"><![CDATA[<p>今天捡起那本被我丢弃已久的Java入门书，想要继续我的Java学习之旅。</p>
 <!-- more -->
 <p>上手写了一个helloworld，然后......</p>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/1586867346170.png" alt="报错" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1586867346170.png" alt="报错" loading="lazy"></figure>
 <p>彩笔编译器！我不学了<br>
 （摔书.jpg</p>
 <p>好吧（小朋友，你的思想很危险.png<br>
 不要抱着这个念头，其实编译器比你聪明多了。</p>
 <p>我们来分析下这个错误（强行分析<br>
-<img src="http://localhost:4001/post-images/1586868111226.png" alt="报错分析" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1586868111226.png" alt="报错分析" loading="lazy"><br>
 看到了前面的两个乱码了没有？很自然联想到时编码错误，于是百度骚操作了一波，明白了不能使用UTF-8-BOM<br>
-<img src="http://localhost:4001/post-images/1586868302480.png" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1586868302480.png" alt="" loading="lazy"><br>
 于是切换回UTF-8问题就解决了。</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[【洛谷P1226】【模板】快速幂||取余运算 题解]]></title>
-        <id>http://localhost:4001/post/Fast-Power-Problem-Solution/</id>
-        <link href="http://localhost:4001/post/Fast-Power-Problem-Solution/">
+        <id>https://skina.cn/post/Fast-Power-Problem-Solution/</id>
+        <link href="https://skina.cn/post/Fast-Power-Problem-Solution/">
         </link>
         <updated>2020-04-09T05:54:43.000Z</updated>
         <summary type="html"><![CDATA[<p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
@@ -54,7 +54,7 @@
 3^2 % 17= ((3 % 17)*(3 % 17)) % 17
 </code></pre>
 <p>因此可得如下p的变化<br>
-<img src="http://localhost:4001/post-images/1586412605583.png" alt="p的变化" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1586412605583.png" alt="p的变化" loading="lazy"></p>
 <p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
 <pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
     if(p==1) return b%k;
@@ -94,8 +94,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[腾讯官方机器人“HOO!K”]]></title>
-        <id>http://localhost:4001/post/tencent-bot/</id>
-        <link href="http://localhost:4001/post/tencent-bot/">
+        <id>https://skina.cn/post/tencent-bot/</id>
+        <link href="https://skina.cn/post/tencent-bot/">
         </link>
         <updated>2020-04-06T04:27:40.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="前言">前言</h3>
@@ -108,15 +108,15 @@ int main() {
 <p>先别激动，跟着我一步步来</p>
 <h3 id="开始">开始</h3>
 <p>首先，先加上机器人的好友<code>2854196399</code><br>
-<img src="http://localhost:4001/post-images/1586325717136.png" alt="添加好友" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1586325717136.png" alt="添加好友" loading="lazy"></p>
 <p>由上图可以看到，机器人的头像上有<code>HOOK BETA</code>几个英文字母，不难明白，这个机器人还在内测当中。<br>
 内测又何妨，<strong><font color="#FF0000">搞它</font></strong>！</p>
 <p>然后把机器人添加到群聊。<br>
-<img src="http://localhost:4001/post-images/1586326704431.gif" alt="加入群聊" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1586326704431.gif" alt="加入群聊" loading="lazy"></p>
 <p>从群聊中点进机器人 <code>信息页-&gt;推送消息-&gt;生成</code><br>
-<img src="http://localhost:4001/post-images/1586327303492.gif" alt="Create" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1586327303492.gif" alt="Create" loading="lazy"></p>
 <p>接着你会看到一串api地址<br>
-<img src="http://localhost:4001/post-images/1586327551390.png" alt="Api" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1586327551390.png" alt="Api" loading="lazy"><br>
 不是我说，这界面也太丑了吧！</p>
 <p>腾讯已经给你了一个调用事例，你可以拿这个干你想干的事情啦！</p>
 <p>不过我反手一想，我的酷Q机器人不是可以用这个来发消息吗？就不用担心腾讯风控啦！（曲线救国</p>
@@ -128,8 +128,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[搭建Flask环境]]></title>
-        <id>http://localhost:4001/post/Build-Flask-environment/</id>
-        <link href="http://localhost:4001/post/Build-Flask-environment/">
+        <id>https://skina.cn/post/Build-Flask-environment/</id>
+        <link href="https://skina.cn/post/Build-Flask-environment/">
         </link>
         <updated>2020-04-06T02:42:22.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="前言">前言</h2>
@@ -176,37 +176,37 @@ windows环境请使用<code>venv\\scripts\\activate</code>命令</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[TIM登微信？还是用微信登录的QQ小号？]]></title>
-        <id>http://localhost:4001/post/tim&amp;wechat/</id>
-        <link href="http://localhost:4001/post/tim&amp;wechat/">
+        <id>https://skina.cn/post/tim&amp;wechat/</id>
+        <link href="https://skina.cn/post/tim&amp;wechat/">
         </link>
         <updated>2020-04-02T08:00:29.000Z</updated>
         <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1585817607343.png" alt="" loading="lazy"></figure>
 <h2 id="前言">前言</h2>
 <p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/1585817607343.png" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1585817607343.png" alt="" loading="lazy"></figure>
 <h2 id="前言">前言</h2>
 <p>万年不更的TIMQQ，在许多用户的吐槽下，终于在3月31日更新到了3.0版本。</p>
 <!-- more -->
 <p>我在某群群友的推荐下，也去更新了新版的QQ。</p>
 <h2 id="更新">更新</h2>
 <p>然鹅，当我点下菜单栏的升级键，给爷弹出了这个：<br>
-<img src="http://localhost:4001/post-images/1585816041835.png" alt="TIMUpdate" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1585816041835.png" alt="TIMUpdate" loading="lazy"><br>
 wdnmd，你这不是在逗我。</p>
 <p>好了，既然腾讯官方这么搞，那我也只能去官网更新了。</p>
 <h2 id="体验">体验</h2>
 <h3 id="登录界面">登录界面</h3>
 <p>新版登录界面真的焕然一新了！！！<br>
-<img src="http://localhost:4001/post-images/1585816595889.png" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1585816595889.png" alt="" loading="lazy"><br>
 看那清新的颜色，看那润滑的圆角，还有那可爱的图片！让人一用就爱不释手（bushi</p>
 <p>据说是QQ和微信二合一！</p>
 <h3 id="tim微信">TIM微信</h3>
 <p>好了进入正题。</p>
 <p>新版TIM是支持微信帐号登录的，那我们就来登录试试看吧。</p>
 <p>登录完之后，可以看到界面空空如也，什么也没有。<br>
-<img src="http://localhost:4001/post-images/1585817260830.png" alt="" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1585817260830.png" alt="" loading="lazy"></p>
 <p>再打开联系人一栏，还是啥也没有<br>
-<img src="http://localhost:4001/post-images/1585817764670.png" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1585817764670.png" alt="" loading="lazy"><br>
 这特么不就是一个全新的<s>微信</s>QQ号吗？<br>
 不过想一想，多了一个QQ账号好像也不是什么坏事。</p>
 <h2 id="最后">最后</h2>
@@ -217,8 +217,8 @@ wdnmd，你这不是在逗我。</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown语法]]></title>
-        <id>http://localhost:4001/post/markdown-rules/</id>
-        <link href="http://localhost:4001/post/markdown-rules/">
+        <id>https://skina.cn/post/markdown-rules/</id>
+        <link href="https://skina.cn/post/markdown-rules/">
         </link>
         <updated>2020-03-31T14:23:02.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="前言">前言</h3>
@@ -310,7 +310,7 @@ wdnmd，你这不是在逗我。</p>
 <pre><code>![SkinCrab的小屋](Example.png)
 </code></pre>
 <p>效果如下：<br>
-<img src="http://localhost:4001/post-images/1585726992232.jpg" alt="SkinCrab的小屋" title="icon" loading="lazy"></p>
+<img src="https://skina.cn/post-images/1585726992232.jpg" alt="SkinCrab的小屋" title="icon" loading="lazy"></p>
 <p>其html格式如下：</p>
 <pre><code>&lt;p&gt;&lt;img alt=&quot;SkinCrab的小屋&quot; title=&quot;icon&quot; src=&quot;Example.png&quot; /&gt;&lt;/p&gt;
 </code></pre>
