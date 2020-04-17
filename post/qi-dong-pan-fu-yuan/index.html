@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    【洛谷P1226】【模板】快速幂||取余运算 题解 | SkinCrab
+    启动盘复原 | SkinCrab
 </title>
 <link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1587130697623">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -150,78 +150,34 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            【洛谷P1226】【模板】快速幂||取余运算 题解
+                            启动盘复原
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2020-04-09</time>
+                            <time class="post-time">2020-04-17</time>
                             
-                                <a href="https://skina.cn/tag/p361fq_09/" class="post-tag i-tag
-                            i-tag-error">
-                            #算法
-                        </a>
-                                
-                                <a href="https://skina.cn/tag/prFRuuXDN/" class="post-tag i-tag
-                            i-tag-">
-                            #题解
-                        </a>
-                                
-                                <a href="https://skina.cn/tag/PRKIWGzFzP/" class="post-tag i-tag
-                            i-tag-error">
-                            #洛谷
-                        </a>
-                                
                         </div>
                         
                                 <div class="post-content">
-                                    <p>拿到题目，看了下内容，发现这道题可以运用到二分算法。</p>
+                                    <p>很多人在重装完系统之后，启动盘都会有一块无法使用的分区，这篇文章就教你将启动盘复原。</p>
 <!-- more -->
-<p>也就是说可以将p拆解，举个栗子3^90%17</p>
-<pre><code>3^90 % 17可以拆分为 ((3^45 % 17)*(3^45 % 17)) % 17
-而3^45 % 17则又可以拆分为((3^22 % 17)*(3^22 % 17)*(3 % 17)) % 17
-后3^22 % 17则拆分为((3^11 % 17)*(3^11 %17)) % 17
-</code></pre>
-<p>以此类推可得</p>
-<pre><code>3^11 % 17 = ((3^5 % 17)*(3^5 %17)*(3 %17)) % 17
-3^5 % 17 = ((3^2 % 17)*(3^2 % 17)*(3 % 17)) % 17
-3^2 % 17= ((3 % 17)*(3 % 17)) % 17
-</code></pre>
-<p>因此可得如下p的变化<br>
-<img src="https://skina.cn/post-images/1586412605583.png" alt="p的变化" loading="lazy"></p>
-<p>为了提升速度，我们据上表，可知只需计算上表绿色部分，即3^&quot;绿色部分&quot; % 17，得代码如下</p>
-<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    return ( cal( b , p/2 , k )%k * cal( b , p/2 , k )%k )%k;
-}
-</code></pre>
-<p>但是以上代码只能处理p为偶数的情况<br>
-因此需在return处添加<code>( p%2==0 ? 1 : b%k )</code><br>
-即当p为偶数时返回1，否则返回b%k</p>
-<p>可是cal函数被调用了两次，是否可以进行优化呢？</p>
-<pre><code class="language-c++">long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    int t=cal( b , p/2 , k )%k;
-    return ( t * t * ( p%2==0 ? 1 : b%k ))%k;
-}
-</code></pre>
-<p>以上为本程序的精华部分，输入输出就不必讲了，以下为我的代码。</p>
-<pre><code class="language-c++"># include &lt;iostream&gt;
-# include &lt;cstdio&gt;
-using namespace std;
-long long b,p,k;
-long long cal(long long b,long long p,long long k) {
-    if(p==1) return b%k;
-    int t=cal( b , p/2 , k )%k;
-    return ( t * t *( p%2==0 ? 1 : b%k ))%k;
-}
-int main() {
-    cin&gt;&gt;b&gt;&gt;p&gt;&gt;k;
-    printf(&quot;%d^%d mod %d=%d&quot;,b,p,k,cal( b , p , k ));
-    return 0;
-}
-</code></pre>
-<p>当然，当p=0时，这个程序无法完美解决，需要你们自己动点手脚噢！</p>
-<p>以上内容摘自<a href="https://skincrab.blog.luogu.org/solution-p1226">我的洛谷博客</a><br>
-转载请务必注明链接。</p>
+<p>注意：此操作将会清除u盘上所有数据！！！！！！</p>
+<p>首先你要有一个启动盘。（没有启动盘你看这篇有啥用？<br>
+类似于<img src="https://skina.cn/post-images/1587129153819.png" alt="" loading="lazy"></p>
+<p>这里是磁盘2.</p>
+<p>接着用Win+R打开cmd或者powershell<br>
+输入<code>diskpart</code>打开dos运行环境。<br>
+<img src="https://skina.cn/post-images/1587130225149.png" alt="" loading="lazy"></p>
+<p>输入<code>select disk 你的磁盘编号</code>，我这里是磁盘2<br>
+<img src="https://skina.cn/post-images/1587130302410.png" alt="" loading="lazy"></p>
+<p>紧接着输入<code>clean</code><br>
+<img src="https://skina.cn/post-images/1587130371587.png" alt="" loading="lazy"></p>
+<p>U盘便恢复了初始状态。</p>
+<p>然后在&quot;菜单&quot;上右键，打开&quot;磁盘管理&quot;<br>
+<img src="https://skina.cn/post-images/1587130536215.png" alt="" loading="lazy"></p>
+<p>在你的磁盘编号右边单击右键，选择新建简单卷<br>
+<img src="https://skina.cn/post-images/1587130616436.png" alt="" loading="lazy"></p>
+<p>一路点击下一步，完成即可。</p>
+<p>至此，启动盘复原完毕。</p>
 
                                 </div>
                     </article>
@@ -229,21 +185,12 @@ int main() {
 					
                     <div class="next-post">
 						
-						<div class="next-left">
-								<div class="next" style="align:left;">上一篇</div>
-								<a href="https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/">
-									<h3 class="post-title" style="align:left;">
-										【Java】编译错误: 需要class, interface或enum
-									</h3>
-								</a>
-						</div>
-						
 						
 						<div class="next-left">
 								<div class="next" style="align:right;">下一篇</div>
-								<a href="https://skina.cn/post/tencent-bot/">
+								<a href="https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/">
 									<h3 class="post-title" style="align:right;">
-										腾讯官方机器人“HOO!K”
+										【Java】编译错误: 需要class, interface或enum
 									</h3>
 								</a>
 						</div>
