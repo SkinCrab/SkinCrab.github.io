@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-04-17T14:22:36.953Z</updated>
+    <updated>2020-04-22T07:56:18.394Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -10,6 +10,80 @@
     <logo>https://skina.cn/images/avatar.png</logo>
     <icon>https://skina.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, SkinCrab</rights>
+    <entry>
+        <title type="html"><![CDATA[DeepinV | 系统安装]]></title>
+        <id>https://skina.cn/post/Deepin-Install/</id>
+        <link href="https://skina.cn/post/Deepin-Install/">
+        </link>
+        <updated>2020-04-21T01:02:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>Windows玩腻了？来玩玩 深度 操作系统吧！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Windows玩腻了？来玩玩 深度 操作系统吧！</p>
+<!-- more -->
+<p>这篇文章将教你安装Deepin20Beta + Windows 10双系统。<br>
+（鉴于Deepin20版本还不太稳定，故不建议在生产环境中使用）</p>
+<h2 id="安装前">安装前</h2>
+<h3 id="准备">准备</h3>
+<p>在安装之前你需要准备</p>
+<ol>
+<li>一个大于8GB的空U盘（用于制作启动盘</li>
+<li>大于20GB的硬盘分区</li>
+<li><span id="Mirror"><a href="https://www.deepin.org/mirrors/releases/">Deepin镜像</a></span></li>
+<li><span id="Tool"><a href="https://www.deepin.org/original/deepin-boot-maker/">Deepin启动盘制作工具</a></span></li>
+</ol>
+<h3 id="磁盘分区">磁盘分区</h3>
+<ol>
+<li>右键单击Windows徽标，选择磁盘管理<br>
+<img src="https://skina.cn/post-images/1587539355108.png" alt="" loading="lazy"></li>
+<li>在你欲安装deepin的分区上右键，选择 压缩卷</li>
+<li>然后填入压缩空间量（建议剩余空间&gt;20GB）<br>
+计算公式：<code>压缩空间量=可压缩空间大小-剩余空间大小</code></li>
+<li>分区完毕</li>
+</ol>
+<h3 id="制作启动盘">制作启动盘</h3>
+<ol>
+<li>打开所下载的<a href="#Tool">Deepin启动盘制作工具</a></li>
+<li>选择你所下载的<a href="#Mirror">Deepin镜像</a><br>
+<img src="https://skina.cn/post-images/1587539885937.png" alt="" loading="lazy"></li>
+<li>然后选择你的U盘<br>
+<img src="https://skina.cn/post-images/1587542147836.png" alt="" loading="lazy"><br>
+4.等待制作完成即可</li>
+</ol>
+<h2 id="start">Start</h2>
+<h3 id="windows系统注意事项">Windows系统注意事项</h3>
+<ol>
+<li>若你的系统是Windows，请关闭快速启动，具体操作方法点<a href="https://jingyan.baidu.com/article/48b558e30ca7977f38c09a95.html">这里</a></li>
+<li>若你的系统是Windows，建议进入BIOS，关闭UEFI.</li>
+</ol>
+<h3 id="开始安装">开始安装</h3>
+<ol>
+<li>首先你得关机</li>
+<li>关机后进入启动项选择菜单（我的联想是F12，不同厂商不一样，详见<a href="#Menu">文末帮助</a>）,选择U盘启动</li>
+<li>选择使用语言（建议使用母语）</li>
+<li>选择手动安装</li>
+<li>选择你所分出来的区<br>
+5.1 若出现提示，选择左边的按钮（忘记截图了）<br>
+注意：<span style="color:red;">除非你知道在干什么，否则请勿选择右边的，那会格式化全盘！</span></li>
+<li>按照下图进行配置即可<br>
+<img src="https://skina.cn/post-images/1587542121452.png" alt="" loading="lazy"></li>
+<li>点击新建，等待安装完成。</li>
+</ol>
+<h3 id="进入系统">进入系统</h3>
+<p>在初次进入系统时一般来说会让你填写用户名以及密码，按要求做就行了。</p>
+<p>Enjoy your Deepin journey！</p>
+<h3 id="使用体验">使用体验</h3>
+<p>个人感觉DeepinV2.0相较V1.X版本而言，颜值提高了不少，但鉴于是Beta版本，很多地方优化的还不够好，再加上个人电脑硬件比较菜，使用体验略有欠缺。</p>
+<h2 id="帮助">帮助</h2>
+<h3 id="span-idmenu启动项选择菜单span"><span id="Menu">启动项选择菜单</span></h3>
+<ul>
+<li>台式机一般为：Delete 键</li>
+<li>笔记本一般为：F2 键</li>
+<li>惠普笔记本一般为：F10 键</li>
+<li>联想笔记本一般为：F12 键</li>
+<li>苹果电脑为：C 键</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【Java】编译错误: 需要class, interface或enum]]></title>
         <id>https://skina.cn/post/java-bian-yi-cuo-wu-xu-yao-class-interface-huo-enum/</id>
