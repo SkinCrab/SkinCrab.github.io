@@ -5,9 +5,9 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    我的朋友们 | SkinCrab
+    友情链接 | SkinCrab
 </title>
-<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1587542285004">
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1587608174473">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -65,7 +65,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://skina.cn">
-                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1587542285004" alt="">
+                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1587608174473" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -152,7 +152,7 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            我的朋友们
+                            友情链接
                         </h2>
                         <div class="post-info">
                             <time class="post-time">2010-01-01</time>
@@ -160,14 +160,18 @@
                         </div>
                         
                                 <div class="post-content">
-                                    <p>闲着没事就去我朋友们的博客转一转吧！</p>
+                                    <h2 id="我的朋友们">我的朋友们</h2>
+<p>闲着没事就去我朋友们的博客转一转吧！</p>
 <!-- more -->
-<p><a href="https://www.parksi.xyz/">Parksi</a><br>
+<p><a href="https://www.cnblogs.com/henrylin">Henrylin666</a><br>
+<a href="https://www.parksi.xyz/">Parksi</a><br>
 <a href="https://tony1026.github.io/">Tony1026</a><br>
 <a href="https://saky.site/">さくら荘後の花園</a><br>
 <a href="https://blog.Crj0b.com/">Crj0b's Blog</a><br>
 <a href="https://www.youdream.top/">优梦博客</a><br>
 <a href="https://oi-master.github.io/">TianyuZhou 小蒟蒻的博客</a></p>
+<h2 id="申请友链">申请友链</h2>
+<p>咕咕了，等着吧.....</p>
 
                                 </div>
                     </article>
@@ -196,35 +200,47 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://skina.cn/images/avatar.png?v=1587542285004)">
-        </div>
-        <h1 class="id_card-title">
-            SkinCrab
-        </h1>
-        <h2 class="id_card-description">
-            我心似旷野之鸟，在你眼里找到天空。
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                <a href="https://github.com/skincrab" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-github"></i></a>
-                
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%91%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC">我的朋友们</a></li>
+<li><a href="#%E7%94%B3%E8%AF%B7%E5%8F%8B%E9%93%BE">申请友链</a></li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 									
 
                 </div>
