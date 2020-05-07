@@ -1,0 +1,335 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    MIUI12 | 来自Mi6x钉子户的使用体验 | SkinCrab
+</title>
+<link rel="shortcut icon" href="https://skina.cn/favicon.ico?v=1588858265779">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://skina.cn/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://skina.cn/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- I added -->
+
+
+
+<!--Google Ads-->
+<script data-ad-client="ca-pub-5872449510033483" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--End-->
+
+<!--看板娘-->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+<!--End-->
+
+
+<!-- End -->
+
+
+        
+	<!--Highlight-->
+	<link rel="stylesheet" type="text/css" href="/styles/railscasts.css">
+	<link rel="stylesheet" href="/styles/default.css">
+	<script src="/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!--End-->
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://skina.cn">
+                <img class="avatar" src="https://skina.cn/images/avatar.png?v=1588858265779" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    SkinCrab
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/Items" class="menu">
+                                    项目
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://skina.cn/post/links" class="menu">
+                                    朋友们
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            MIUI12 | 来自Mi6x钉子户的使用体验
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-04-30</time>
+                            
+                                <a href="https://skina.cn/tag/A72V5nKUL/" class="post-tag i-tag
+                            i-tag-other_4">
+                            #产品测评
+                        </a>
+                                
+                                <a href="https://skina.cn/tag/EU74W-gzo/" class="post-tag i-tag
+                            i-tag-success">
+                            #实用教程
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <!-- more -->
+<p><img src="https://skina.cn/post-images/1588228857611.gif" alt="" loading="lazy"><br>
+(多图预警！！！)<br>
+继MIUI11发布7个月零3天之后，小米发布了MIUI12系统。</p>
+<!-- more -->
+<p>当然，作为钉子户以及米粉的我，在27号早上，就抢到了内测的名额。</p>
+<p>来看看发布会上讲了哪些新功能吧！</p>
+<h2 id="官方解读">官方解读</h2>
+<p>看过官方解读了？<a href="#jump">点这</a>跳转测评文章</p>
+<h3 id="米柚光锥动画架构">米柚光锥动画架构</h3>
+<p>小米自研了物理动画引擎，重写了底层渲染机制。通过MAML插画引擎、Folme动画引擎、MiRender渲染引擎，实现了完美动态圆角、高级混色、控件级实时模糊、物理空间运动、动态窗体等优雅的视觉和动画效果。源于这先进的技术架构，系统动画焕然一新。<br>
+<img src="https://skina.cn/post-images/1588228701257.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588228753926.gif" alt="" loading="lazy"></p>
+<h3 id="全新的ui设计">全新的UI设计</h3>
+<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1588228951251.webp" alt="" loading="lazy"></figure>
+<h3 id="超级壁纸">超级壁纸</h3>
+<p><img src="https://skina.cn/post-images/1588229072343.png" alt="" loading="lazy"><br>
+基于卫星数据<br>
+重建火星3D地貌<br>
+<img src="https://skina.cn/post-images/1588229134443.png" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229156892.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229176985.gif" alt="" loading="lazy"></p>
+<h3 id="隐私保护">隐私保护</h3>
+<p><img src="https://skina.cn/post-images/1588229330969.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229333641.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229349221.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229362672.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229367710.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229381344.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229386974.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229391357.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229403403.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229412080.webp" alt="" loading="lazy"></p>
+<h3 id="全局自由小窗">全局自由小窗</h3>
+<p><img src="https://skina.cn/post-images/1588229616785.webp" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229627591.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229634433.gif" alt="" loading="lazy"><br>
+<img src="https://skina.cn/post-images/1588229639911.gif" alt="" loading="lazy"></p>
+<h3 id="健康">健康</h3>
+<p><img src="https://skina.cn/post-images/1588229695260.png" alt="" loading="lazy"><br>
+自研AI运动算法<br>
+识别精准、功耗低<br>
+世界主流手机上，小米和Google，支持实时运动行为感知技术。我们自研的AI运动行为感知算法，基于小米MACE Micro实现。不仅数据准确，精度高，还省电，一整天耗电量小于1%*。得益于此，你可以轻松拥有手机里的健康中心。（*以小米10为例，24小时耗电量9.6mAh；数据经泰尔实验室测试认证）</p>
+<h3 id="ai通话">AI通话</h3>
+<p>远离骚扰电话的纷扰<br>
+轻松搞定骚扰电话可以完全不用动嘴，小爱同学帮你自动接听和智能回复。<br>
+同时，听障人士也能<strong>毫无障碍</strong>的工作</p>
+<h3 id="来源">来源</h3>
+<p>以上内容摘自MIUI公众号</p>
+<h2 id="span-idjump使用体验span"><span id="Jump">使用体验</span></h2>
+
+                                </div>
+                    </article>
+                    <!--  -->
+					
+                    <div class="next-post">
+						
+						
+						<div class="next-left">
+								<div class="next" style="align:right;">下一篇</div>
+								<a href="https://skina.cn/post/Deepin-Install/">
+									<h3 class="post-title" style="align:right;">
+										DeepinV20 | 系统安装
+									</h3>
+								</a>
+						</div>
+						
+                    </div>
+					
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+					<!--Valine-->
+					<div id="vcomments"></div>
+					
+					<!--Valine-->
+					<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+					<!--End-->
+					<script>
+						new Valine({
+							el: '#vcomments',
+							appId: '6H4OQzIlcbW9l8MgmcqOFixI-gzGzoHsz',
+							appKey: '9x36v2N723mtlEYjT8CaaSjn'
+						})
+					</script>
+					<!--End-->
+                </div>
+				
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%AE%98%E6%96%B9%E8%A7%A3%E8%AF%BB">官方解读</a>
+<ul>
+<li><a href="#%E7%B1%B3%E6%9F%9A%E5%85%89%E9%94%A5%E5%8A%A8%E7%94%BB%E6%9E%B6%E6%9E%84">米柚光锥动画架构</a></li>
+<li><a href="#%E5%85%A8%E6%96%B0%E7%9A%84ui%E8%AE%BE%E8%AE%A1">全新的UI设计</a></li>
+<li><a href="#%E8%B6%85%E7%BA%A7%E5%A3%81%E7%BA%B8">超级壁纸</a></li>
+<li><a href="#%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4">隐私保护</a></li>
+<li><a href="#%E5%85%A8%E5%B1%80%E8%87%AA%E7%94%B1%E5%B0%8F%E7%AA%97">全局自由小窗</a></li>
+<li><a href="#%E5%81%A5%E5%BA%B7">健康</a></li>
+<li><a href="#ai%E9%80%9A%E8%AF%9D">AI通话</a></li>
+<li><a href="#%E6%9D%A5%E6%BA%90">来源</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8Cspan"><span id="Jump">使用体验</span></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+									
+
+                </div>
+				
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by<a href="https://github.com/skincrab" target="_blank">SkinCrab</a> | 
+  <a class="rss" href="https://skina.cn/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>
