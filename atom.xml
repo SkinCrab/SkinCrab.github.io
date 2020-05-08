@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skina.cn</id>
     <title>SkinCrab</title>
-    <updated>2020-05-07T13:31:08.487Z</updated>
+    <updated>2020-05-08T07:12:08.118Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skina.cn"/>
     <link rel="self" href="https://skina.cn/atom.xml"/>
@@ -10,64 +10,6 @@
     <logo>https://skina.cn/images/avatar.png</logo>
     <icon>https://skina.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, SkinCrab</rights>
-    <entry>
-        <title type="html"><![CDATA[MIUI12 | 来自Mi6x钉子户的使用体验]]></title>
-        <id>https://skina.cn/post/MIUI12/</id>
-        <link href="https://skina.cn/post/MIUI12/">
-        </link>
-        <updated>2020-04-30T06:26:20.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<p><img src="https://skina.cn/post-images/1588228857611.gif" alt="" loading="lazy"><br>
-(多图预警！！！)<br>
-继MIUI11发布7个月零3天之后，小米发布了MIUI12系统。</p>
-<!-- more -->
-<p>当然，作为钉子户以及米粉的我，在27号早上，就抢到了内测的名额。</p>
-<p>来看看发布会上讲了哪些新功能吧！</p>
-<h2 id="官方解读">官方解读</h2>
-<p>看过官方解读了？<a href="#jump">点这</a>跳转测评文章</p>
-<h3 id="米柚光锥动画架构">米柚光锥动画架构</h3>
-<p>小米自研了物理动画引擎，重写了底层渲染机制。通过MAML插画引擎、Folme动画引擎、MiRender渲染引擎，实现了完美动态圆角、高级混色、控件级实时模糊、物理空间运动、动态窗体等优雅的视觉和动画效果。源于这先进的技术架构，系统动画焕然一新。<br>
-<img src="https://skina.cn/post-images/1588228701257.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588228753926.gif" alt="" loading="lazy"></p>
-<h3 id="全新的ui设计">全新的UI设计</h3>
-<figure data-type="image" tabindex="1"><img src="https://skina.cn/post-images/1588228951251.webp" alt="" loading="lazy"></figure>
-<h3 id="超级壁纸">超级壁纸</h3>
-<p><img src="https://skina.cn/post-images/1588229072343.png" alt="" loading="lazy"><br>
-基于卫星数据<br>
-重建火星3D地貌<br>
-<img src="https://skina.cn/post-images/1588229134443.png" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229156892.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229176985.gif" alt="" loading="lazy"></p>
-<h3 id="隐私保护">隐私保护</h3>
-<p><img src="https://skina.cn/post-images/1588229330969.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229333641.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229349221.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229362672.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229367710.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229381344.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229386974.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229391357.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229403403.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229412080.webp" alt="" loading="lazy"></p>
-<h3 id="全局自由小窗">全局自由小窗</h3>
-<p><img src="https://skina.cn/post-images/1588229616785.webp" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229627591.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229634433.gif" alt="" loading="lazy"><br>
-<img src="https://skina.cn/post-images/1588229639911.gif" alt="" loading="lazy"></p>
-<h3 id="健康">健康</h3>
-<p><img src="https://skina.cn/post-images/1588229695260.png" alt="" loading="lazy"><br>
-自研AI运动算法<br>
-识别精准、功耗低<br>
-世界主流手机上，小米和Google，支持实时运动行为感知技术。我们自研的AI运动行为感知算法，基于小米MACE Micro实现。不仅数据准确，精度高，还省电，一整天耗电量小于1%*。得益于此，你可以轻松拥有手机里的健康中心。（*以小米10为例，24小时耗电量9.6mAh；数据经泰尔实验室测试认证）</p>
-<h3 id="ai通话">AI通话</h3>
-<p>远离骚扰电话的纷扰<br>
-轻松搞定骚扰电话可以完全不用动嘴，小爱同学帮你自动接听和智能回复。<br>
-同时，听障人士也能<strong>毫无障碍</strong>的工作</p>
-<h3 id="来源">来源</h3>
-<p>以上内容摘自MIUI公众号</p>
-<h2 id="span-idjump使用体验span"><span id="Jump">使用体验</span></h2>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[DeepinV20 | 系统安装]]></title>
         <id>https://skina.cn/post/Deepin-Install/</id>
